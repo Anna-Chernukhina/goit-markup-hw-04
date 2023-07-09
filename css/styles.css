@@ -339,17 +339,19 @@ a {
 
 .team-section-list {
     display: flex;
+    justify-content: space-between;
 }
 
 .team-list-item {
     background: var(--white-background);
     border-radius: 0px 0px 4px 4px;
-    width: calc((100% - 72px) / 4);
+    max-width: calc((100% - 72px) / 4);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.team-list-item:not(:last-child) {
+/* .team-list-item:not(:last-child) {
     margin-right: 24px;
-}
+} */
 
 .employee-container {
     padding: 32px 16px;
@@ -370,6 +372,25 @@ a {
     text-align: center;
     color: var(--text-color);
     margin: 0;
+}
+
+.employee-links-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blue-circle {
+    width: 40px;
+    height: 40px;
+    background-color: var(--iris, #4D5AE5);
+    border-radius: 50%;
+    /* display: flex; */
+}
+
+.blue-circle svg {
+    display: block;
+    margin: 12px auto;
+    padding: 12px 0;
 }
 
 /**----5 Customers section----*/
