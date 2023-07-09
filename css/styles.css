@@ -254,6 +254,20 @@ a {
     margin-right: 24px;
 }
 
+.principles-image {
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background: var(--cloud, #F4F4FD);
+    margin-bottom: 8px;
+}
+
+.principles-image svg {
+    display: block;
+    margin: 0 auto;
+    padding: 24px 0;
+}
+
 .principles-name {
     font-weight: 500;
     font-size: 20px;
