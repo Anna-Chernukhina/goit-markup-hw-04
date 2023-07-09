@@ -384,13 +384,13 @@ a {
     height: 40px;
     background-color: var(--iris, #4D5AE5);
     border-radius: 50%;
-    /* display: flex; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.blue-circle svg {
+.our-team-icon {
     display: block;
-    margin: 12px auto;
-    padding: 12px 0;
 }
 
 /**----5 Customers section----*/
@@ -465,6 +465,22 @@ a {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+
+.footer-social-list {
+    display: flex;
+    gap: 16px;
+    margin: 0;
+}
+
+.footer-icon {
+    display: block;
+}
+
+.social-list-item .blue-circle:hover,
+.social-list-item .blue-circle:focus {
+    background-color: var(--success);
 }
 
 /** ----Portfolio.html---- */
