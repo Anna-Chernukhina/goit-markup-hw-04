@@ -393,6 +393,11 @@ a {
     display: block;
 }
 
+.links-list-item .blue-circle:hover,
+.links-list-item .blue-circle:focus {
+    background-color: var(--pressed-state);
+}
+
 /**----5 Customers section----*/
 .customers {
     padding: 120px 0;
@@ -417,7 +422,21 @@ a {
 .customers-list-item {
     padding: 16px 32px;
     border-radius: 4px;
-    border: 1px solid var(--lightslate, #8E8F99);
+    border: 1px solid var(--subtle-text-color);
+}
+
+.customer-icon {
+    fill: #8e8f99;
+}
+
+.customer-icon:hover {
+    fill: var(--pressed-state);
+}
+
+.customers-list-item:hover,
+.customers-list-item:focus {
+    border: 1px solid var(--pressed-state);
+    fill: var(--pressed-state);
 }
 
 /**----Footer----*/
@@ -429,10 +448,6 @@ a {
 .footer-wrap {
     display: flex;
     gap: 120px;
-}
-
-.footer-left {
-    /* padding-right: 120px; */
 }
 
 .footer-link {
