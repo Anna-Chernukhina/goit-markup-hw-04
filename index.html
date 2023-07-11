@@ -61,9 +61,19 @@
         <section class="main-section">
             <div class="hero-container container">
                 <h1 class="title">Effective Solutions for Your Business</h1>
-                <button type="button" class="main-section-button">Order Service</button>
+                <button data-modal-open type="button" class="main-section-button">Order Service</button>
             </div>
         </section>
+
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button data-modal-close class="grey-circle">
+                    <svg width="8" height="8">
+                        <use href="./images/symbol-defs.svg#icon-close-black-18dp"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
 
         <!--2 Principles-->
         <section class="principles">
