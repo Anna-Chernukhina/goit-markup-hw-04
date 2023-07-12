@@ -702,7 +702,7 @@ a {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.products-portfolio-link:hover {
+.products-portfolio-list-item:hover .products-portfolio-link {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
@@ -740,6 +740,8 @@ a {
     top: 0;
     left: 0;
     height: 100%;
+    box-sizing: border-box;
+    margin: 0;
     padding: 40px 32px;
     width: 100%;
     color: var(--light);
@@ -752,6 +754,6 @@ a {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.product-img-wrap:hover .product-cover-text {
+.products-portfolio-list-item:hover .product-cover-text {
     transform: translateY(0);
 }
